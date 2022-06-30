@@ -1,6 +1,7 @@
-import "./style/topbar.css";
 import { Person, Chat, Notifications, Search } from '@mui/icons-material';
-import logo from '../logo-40.jpg';
+
+import logo from '../../logo-40.jpg';
+import "./topbar.css";
 
 const Topbar = () => {
   return (
