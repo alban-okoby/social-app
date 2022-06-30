@@ -1,9 +1,13 @@
-
+import Home from './pages/home/Home';
+import './App.css';
 
 function App() {
-  return (
-    <div>SocialApp</div>
-  );
-}
-
-export default App;
+	return (
+	  	<>
+			<Home/>
+	  	</>
+	);
+  }
+  
+  export default App;
+  
