@@ -1,11 +1,15 @@
 import "./style/topbar.css";
 import { Person, Chat, Notifications, Search } from '@mui/icons-material';
+import logo from '../logo-40.jpg';
 
 const Topbar = () => {
   return (
     <div className="topbarContainer">
 		<div className="topbarLeft">
-			<span className="logo">SocialApp</span>
+			<div className="logo">
+				<img src={logo} className="logoImg" />
+				<span className="logoName">DigitalSouag </span>
+			</div>
 		</div>
 		<div className="topbarCenter">
 			<div className="searchBar">
@@ -31,7 +35,7 @@ const Topbar = () => {
 					<Notifications />
 					<span className="topbarIconBadge">17</span>
 				</div>
-				<img src="https://mdbootstrap.com/img/new/avatars/6.jpg" alt="" className="topbarImg" />
+				<img src="https://mdbootstrap.com/img/new/avatars/16.jpg" alt="" className="topbarImg" />
 			</div>
 			
 		</div>

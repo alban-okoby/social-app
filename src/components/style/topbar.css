@@ -1,3 +1,23 @@
+
+.searchBar {
+    background: var(--light);
+    padding: var(--search-padding);
+    border-radius: var(--border-radius);
+}
+.searchBar input[type="search"] {
+    background: transparent;
+    color: var(--dark);
+    width: 30vw;
+    padding: .6rem 1rem;
+    margin-left: 1rem;
+    font-size: .9rem;
+    overflow: hidden;
+
+}
+.searchBar input[type="search"]::placeholder {
+    color: var(--gray);
+}
+
 .topbarContainer {
     width: 100%;
     height: 50px;
@@ -17,6 +37,15 @@
 .topbarLeft .logo {
     font-weight: 500;
     font-size: 1.5rem;
+    display: flex;
+}
+.topbarLeft .logoImg {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1/1 ;
+    margin-right: .4rem;
 }
 .topbarCenter {
     flex: 5;
@@ -41,6 +70,8 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
 }
 .topbarLinks {
     display: flex;
@@ -66,4 +97,52 @@
     top: -.4rem; left: .8rem;
     display: flex;
     justify-content: center;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:767px) {
+    
+    .topbarCenter {
+        display: block;
+        margin-left: 3.2rem;
+        flex: 4;
+        align-items: center;
+    }
+    .topbarLeft {
+        flex: 2;
+    }
+    .topbarRight {
+        flex: 5;
+    }
+    .searchBar {
+        padding: .4rem;
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .searchBar input{
+        visibility: hidden;
+    }
+    .searchBar .searchIcon{
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .topbarLeft {
+        flex: 3;
+    }
+    .topbarLeft .logoName {
+        display: none;
+    }
+    .topbarCenter {
+        display: block;
+        flex: 3;
+    }
+    .topbarRight {
+        flex: 6;
+        margin-right: .7rem;
+    }
+    .topbarRight .topbarLinks {
+        margin-right: .7rem;
+    }
 }

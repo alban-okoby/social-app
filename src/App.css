@@ -62,30 +62,15 @@ body {
     margin: 0 auto;
 }
 
-.profile_picture {
-    width: 3rem;
-    height: 3rem;
+.profile_picture, .logoImg {
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     overflow: hidden;
     aspect-ratio: 1/1 ;
 }
-.searchBar {
-    background: var(--light);
-    padding: var(--search-padding);
-    border-radius: var(--border-radius);
-}
-.searchBar input[type="search"] {
-    background: transparent;
-    color: var(--dark);
-    width: 30vw;
-    padding: .6rem 1rem;
-    margin-left: 1rem;
-    font-size: .9rem;
-    overflow: hidden;
-
-}
-.searchBar input[type="search"]::placeholder {
-    color: var(--gray);
+.logo {
+    display: flex;
 }
 img {
     width: 100%;
