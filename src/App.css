@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,400&display=swap');
 
 :root {
-    --Hue: 219;
-    --Saturation: 89%;
-    --Luminosity: 54%;
+    --Hue: 280;
+    --Saturation: 49%;
+    --Luminosity: 44%;
 
     --BackgroundHue: 252;
     --BackgroundSaturation: 30%;
@@ -63,8 +63,8 @@ body {
 }
 
 .profile_picture, .logoImg {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     overflow: hidden;
     aspect-ratio: 1/1 ;
@@ -81,22 +81,22 @@ img {
     display: inline-block;
     padding: var(--btn-padding);
     cursor: pointer;
-    font-size: .9rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    border-radius: var(--border-radius);
+    border-radius: .5rem;
     transition: all .3s ease;
     color: var(--white);
 }
 
 .btn:hover {
     opacity: .8;
-    color: var(--white);
+    /* color: var(--white); */
 }
 .btn-preference {
-    background: var(--or);
+    background: var(--preference);
 }
 .btn-preference-50 {
-    background: var(--or-50);
+    background: var(--preference-50);
 }
 .btn-primary {
     background: var(--primary);
@@ -124,6 +124,9 @@ img {
 }
 .btn-black {
     background: var(--black);
+}
+.btn-default {
+    color: var(--black);
 }
 .text_bold {
     font-weight: 600;

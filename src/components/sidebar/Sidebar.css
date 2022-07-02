@@ -1,4 +1,44 @@
 .sidebar {
     flex: 3;
-    background: red;
+    align-items: center;
+    height: calc(100vh - 3rem);
+    font-size: 1.2rem;
+    overflow-y: auto;
+}
+.sidebar-wrapper {
+    padding: 1.3rem;
+}
+.sidebar-list {
+    padding: .4rem; margin: 0;
+    list-style: none;
+}
+.sidebar-list-item {
+    display: flex;
+    align-items: center;
+    padding: .2rem;
+    cursor: pointer;
+    margin-bottom: .7rem;
+}
+.sidebar-list-item .sidebar-icon {
+    margin-right: .7rem;
+}
+.sidebar hr {
+    margin: 1rem 0;
+    color: black;
+    width: 17vw;
+    height: 1px;
+    background-color: black;
+}
+.sidebar-friend {
+    display: flex;
+    align-items: center;
+}
+.friend_picture {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1/1 ;
+    margin-right: .3rem;
+    margin-bottom: .3rem;
 }
