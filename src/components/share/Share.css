@@ -1,0 +1,64 @@
+.share {
+    width: 100%;
+    background-color: var(--white);
+    height: 10.625rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 0 0 .9rem 0rem rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0 0 .9rem rgba(0, 0, 0, 0.58);
+    -o-box-shadow: 0 0 .9rem rgba(0, 0, 0, 0.58);
+    padding: .3rem .2rem;
+    margin: .3rem .9rem;
+    margin-right: 1rem;
+    border: 1px solid var(--preference);
+
+}
+.share .wrapper {
+    padding: .313rem;
+}
+.share .top {
+    display: flex;
+    align-items: center;
+}
+.share input {
+    width: 84%;
+    /* background: var(--light); */
+    color: var(--gray);
+    padding: .6rem 1rem;
+    margin-left: .4rem;
+    font-size: .9rem;
+    overflow: hidden;
+    height: 4vh;
+    border-radius: var(--border-radius);
+}
+.share:focus {
+    outline: none;
+}
+.share hr {
+    border-bottom: .1rem solid var(--preference);
+    width: 80%;
+    align-items: center;
+    display: flex;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    color: var(--preference);
+}
+.share .bottom {
+    display: flex;
+    justify-content: space-around;
+}
+.share .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.share .options .option {
+    cursor: pointer;
+    margin-left: .2rem;
+}
+.share .options .option .icon {
+    margin-bottom: -.33rem;
+    margin-right: .2rem;
+}

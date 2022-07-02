@@ -67,6 +67,14 @@ const Sidebar = () => {
                 <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" className="friend_picture"/>
                 <span className=""> Aigle Dimbé</span>
               </li>
+              <li className="sidebar-friend">
+                <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" className="friend_picture"/>
+                <span className=""> John Doe</span>
+              </li>
+              <li className="sidebar-friend">
+                <img src="https://mdbootstrap.com/img/new/avatars/5.jpg" className="friend_picture"/>
+                <span className=""> Andi Souag</span>
+              </li>
             </ul>
         </div>
     </div>

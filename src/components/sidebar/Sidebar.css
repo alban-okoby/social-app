@@ -1,9 +1,20 @@
 .sidebar {
     flex: 3;
     align-items: center;
-    height: calc(100vh - 3rem);
+    height: calc(100vh - 2.7rem);
     font-size: 1.2rem;
-    overflow-y: auto;
+    overflow-y: scroll;
+    background-color: var(--white);
+}
+
+::-webkit-scrollbar{
+    width: 1.5rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--gray);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--preference);
 }
 .sidebar-wrapper {
     padding: 1.3rem;

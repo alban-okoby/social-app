@@ -1,22 +1,36 @@
 import React from 'react';
-import { PermMedia } from '@mui/icons-material';
+import { EmojiEmotions, PermMedia, Room } from '@mui/icons-material';
+import './Share.css';
 
 const Share = () => {
   return (
     <div className="share">
         <div className="wrapper">
             <div className="top">
-                <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" className="friend_picture" />
-                <input className="input" placeholder="Exprimer vos pensez, librement" />
+                <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" className="friend_picture" alt="description" />
+                <input className="SearchInput" placeholder="Exprimer vos pensez, partagez librement" />
             </div>
             <hr className='hr' />
             <div className='bottom'>
                 <div className='options'>
                     <div className='option'>
-                        <PermMedia className="icon" />
-                    <span className="option-text">Photo  ou Video</span>
+                        <PermMedia htmlColor="tomato" className="icon" 
+                        />
+                        <span className="option-text">media</span>
+                    </div>
+                    <div className='option'>
+                        <Room className="icon" htmlColor="blue"
+                        />
+                        <span className="option-text" >Position</span>
+                    </div>
+                    <div className='option'>
+                        <EmojiEmotions        className="icon" 
+                        htmlColor="goldenrod"
+                        />
+                        <span className="option-text">Humeur</span>
                     </div>
                 </div>
+                <button className="btn btn-preference">publier</button>
             </div>
         </div>
     </div>
