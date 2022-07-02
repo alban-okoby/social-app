@@ -1,13 +1,15 @@
 import React from 'react';
 import { EmojiEmotions, PermMedia, Room } from '@mui/icons-material';
+
 import './Share.css';
+import profileImg from '../../assets/image/profile.png';
 
 const Share = () => {
   return (
     <div className="share">
         <div className="wrapper">
             <div className="top">
-                <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" className="friend_picture" alt="description" />
+                <img src={profileImg} className="friend_picture" alt="description" />
                 <input className="SearchInput" placeholder="Exprimer vos pensez, partagez librement" />
             </div>
             <hr className='hr' />
