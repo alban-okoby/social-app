@@ -9,7 +9,7 @@ const Topbar = () => {
     <div className="topbarContainer">
 		<div className="topbarLeft">
 			<div className="logo">
-				<img src={logo} className="logoImg" />
+				<img src={logo} alt="user description" className="logoImg" />
 				<span className="logoName">DigitalSouag </span>
 			</div>
 		</div>

@@ -1,0 +1,51 @@
+.post {
+    margin-top: 1.5rem;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    -o-box-shadow: var(--box-shadow);
+    padding: .1rem .2rem;
+    border: 1px solid var(--preference);
+}
+.post .wrapper .postTop {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: var(--card-border-radius);
+}
+.post .wrapper .postTopLeft {
+    display: flex;
+    align-items: center;
+}
+.post .wrapper .postTopLeft .userName {
+    foont-weight: bold;
+    margin-top: -.9rem;
+}
+.post .wrapper .postTopLeft .postDate {
+    margin-left: -5.6rem;
+    margin-top: 2rem;
+}
+.post .wrapper .postTopRight {
+    margin-top: 2rem;
+}
+.post .wrapper .postCenter {
+    margin: 0 1.25rem;
+}
+.post .postCenter img {
+    max-height: 62vh;
+    object-fit: fill;
+    border-radius: var(--card-border-radius);
+    /* aspect-ratio: 1/1; */
+}
+.post .wrapper .postBottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.post .wrapper .postBottomLeft {
+    display: flex;
+    align-items: center;
+}

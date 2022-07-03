@@ -2,14 +2,12 @@
     width: 100%;
     background-color: var(--white);
     height: 10.625rem;
-    border-radius: var(--border-radius);
-    box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.58);
-    -webkit-box-shadow: 0 0 .9rem 0rem rgba(0, 0, 0, 0.58);
-    -moz-box-shadow: 0 0 .9rem rgba(0, 0, 0, 0.58);
-    -o-box-shadow: 0 0 .9rem rgba(0, 0, 0, 0.58);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    -o-box-shadow: var(--box-shadow);
     padding: .3rem .2rem;
-    margin: .3rem .9rem;
-    margin-right: 1rem;
     border: 1px solid var(--preference);
 
 }

@@ -9,6 +9,7 @@
     margin-bottom: .4rem;
     box-shadow: 0 0 0 .2rem red;
     -webkit-box-shadow: 0 0 1rem var(--gray);
+    z-index: 11;
     
 }
 

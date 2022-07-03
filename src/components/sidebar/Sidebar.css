@@ -5,9 +5,13 @@
     font-size: 1.2rem;
     overflow-y: scroll;
     background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+    position: sticky;
+    z-index: 1;
 }
 
-.sidebar::-webkit-scrollbar{
+/* .sidebar::-webkit-scrollbar{
     width: 1.4rem;
 }
 .sidebar::-webkit-scrollbar-track{
@@ -15,7 +19,7 @@
 }
 .sidebar::-webkit-scrollbar-thumb{
     background: var(--preference);
-}
+} */
 .sidebar-wrapper {
     padding: 1.3rem;
 }
