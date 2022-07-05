@@ -24,28 +24,80 @@
     foont-weight: bold;
     margin-top: -.9rem;
 }
+.post .wrapper .postTopLeft .userName,
+.post .wrapper .postTopLeft .profile_picture,
+.post .wrapper .postTopLeft .userName,
+.post .wrapper .postTopRight,
+.post .postBottom .postBottomLeft li,
+.post .postBottom .postBottomCenter .postCommentCount,
+.post .postBottom .icon {
+    cursor: pointer;
+}
 .post .wrapper .postTopLeft .postDate {
     margin-left: -5.6rem;
     margin-top: 2rem;
 }
 .post .wrapper .postTopRight {
-    margin-top: 2rem;
+    margin-top: .3rem;
+    font-size: 1.2rem;
+    border-radius: 60%;
+    padding:.7rem .5rem .2rem .7rem;
+}
+.post .wrapper .postTopRight:hover {
+    background: hsl(252, 30%, 95%);
 }
 .post .wrapper .postCenter {
-    margin: 0 1.25rem;
+    margin: 0 .4rem;
+    margin-top: .5rem;
 }
-.post .postCenter img {
+.post .wrapper .postCenter img {
     max-height: 62vh;
     object-fit: fill;
     border-radius: var(--card-border-radius);
-    /* aspect-ratio: 1/1; */
+    aspect-ratio: 4/4;
+    margin-top: .5rem;
+}
+.post .postCenter .postText {
+    font-size: 1.2rem;
+    padding: .1rem .3rem;
+    text-align: left;
 }
 .post .wrapper .postBottom {
     display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
+    justify-content: space-around;
+    margin: 1rem; padding: .1rem .8rem;
+    font-size: 1.2rem;
 }
 .post .wrapper .postBottomLeft {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: .1rem;
+}
+.post .postBottom .postBottomLeft li {
+    marhin-right: .3rem;
+}
+.post .postBottom .icon {
+    margin-right: .8rem;
+    font-size: 1.7rem;
+}
+
+.post .wrapper .postBottom .postBottomLeft li:nth-child(3) {
+    color: #4E342E;
+}
+.post .postBottom .postBottomLeft li:nth-child(2) {
+    color: deeppink;    
+}
+.post .wrapper .postBottom .postBottomLeft li:nth-child(1) {
+    color: #1E88E5;    
+}
+
+.post .postBottom .postBottomCenter {
+    margin-top: .5rem;
+}
+.post .postBottomRight {
+    padding: .5rem;
+}
+.post .postBottom .postCommentText:hover {
+    color: var(--preference);
 }
