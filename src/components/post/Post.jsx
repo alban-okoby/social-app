@@ -9,7 +9,8 @@ import { faHeart, faComment, faThumbsUp, faShare } from '@fortawesome/free-solid
 import './Post.css';
 
 
-const Post = () => {
+const Post = (post) => {
+    console.log(post);
   return (
     <div className='post'>
         <div className='wrapper'>
