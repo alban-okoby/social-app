@@ -1,0 +1,32 @@
+
+.rightbar .wrapper .userInfos {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: .7rem;
+    padding: .2rem;;
+    margin: .2rem;
+}
+
+.rightbar .wrapper .rightbarOnline {
+    width: .75rem; 
+    height: .75rem;
+    padding: .15rem;
+    border-radius: 50%;
+    margin-top: -1.8rem;
+    margin-left: 2.25rem;
+    border: .2rem solid var(--white);
+    position: absolute;
+    object-fit: cover;
+    background: limegreen;
+}
+.rightbar .wrapper .rightbarUsername {
+    font-weight: bold;
+    text-align: center;
+    margin-top: .3rem;
+}
+.rightbar .wrapper .rightbarAd {
+    margin: 1.875rem 0;
+    width: 100%;
+    border-radius: .625rem;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Rightbar.css';
-
+import Online from '../online/Online.jsx';
+import { Users } from '../../data/data';
 import bithdayGif from '../../assets/image/bithday.gif';
 
 const Rightbar = () => {
@@ -16,49 +17,9 @@ const Rightbar = () => {
 			<img src="https://mdbootstrap.com/img/new/avatars/4.jpg" alt="" className="imgProfile" />
 			<h4 className="rightbarTitle"> Amis en ligne</h4>
 			<ul>
-				<li className="userInfos">
-					<div className="rightbarProfileImgContainer">
-						<img src="https://mdbootstrap.com/img/new/avatars/6.jpg" alt="" className="friend_picture"/>
-					<span className="rightbarOnline"></span>
-					</div>
-					<span className="rightbarUsername">Cecile Koffi</span>
-				</li>
-				<li className="userInfos">
-					<div className="rightbarProfileImgContainer">
-						<img src="https://mdbootstrap.com/img/new/avatars/7.jpg" alt="" className="friend_picture"/>
-					<span className="rightbarOnline"></span>
-					</div>
-					<span className="rightbarUsername">Ruth Fidele</span>
-				</li>
-				
-				<li className="userInfos">
-					<div className="rightbarProfileImgContainer">
-						<img src="https://mdbootstrap.com/img/new/avatars/18.jpg" alt="" className="friend_picture"/>
-					<span className="rightbarOnline"></span>
-					</div>
-					<span className="rightbarUsername">Joel Assemian</span>
-				</li>
-				<li className="userInfos">
-					<div className="rightbarProfileImgContainer">
-						<img src="https://mdbootstrap.com/img/new/avatars/21.jpg" alt="" className="friend_picture"/>
-					<span className="rightbarOnline"></span>
-					</div>
-					<span className="rightbarUsername">Bill Gate</span>
-				</li>
-				<li className="userInfos">
-					<div className="rightbarProfileImgContainer">
-						<img src="https://mdbootstrap.com/img/new/avatars/3.jpg" alt="" className="friend_picture"/>
-					<span className="rightbarOnline"></span>
-					</div>
-					<span className="rightbarUsername">Marc Zukerberg</span>
-				</li>
-				<li className="userInfos">
-					<div className="rightbarProfileImgContainer">
-						<img src="https://mdbootstrap.com/img/new/avatars/10.jpg" alt="" className="friend_picture"/>
-					<span className="rightbarOnline"></span>
-					</div>
-					<span className="rightbarUsername">John Kenedy</span>
-				</li>
+				{Users.map(u => 
+					<Online key={u.id} user={u} />
+				)}
 			</ul>
 		</div>
     </div>

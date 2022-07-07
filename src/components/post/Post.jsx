@@ -1,7 +1,6 @@
 import React from 'react';
 // Material Icons
 import { MoreVert, EmojiEmotions} from '@mui/icons-material';
-import profileImg from  '../../assets/image/profile.png';
 // Font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faComment, faThumbsUp, faShare } from '@fortawesome/free-solid-svg-icons';
@@ -9,7 +8,7 @@ import { faHeart, faComment, faThumbsUp, faShare } from '@fortawesome/free-solid
 import './Post.css';
 import { Users } from '../../data/data';
 
-const Post = ({post}) => {
+const Post = ({post}) => { 
   return (
     <div className='post'>
         <div className='wrapper'>
