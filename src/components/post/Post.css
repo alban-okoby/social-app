@@ -23,6 +23,7 @@
 .post .wrapper .postTopLeft .userName {
     foont-weight: bold;
     margin-top: -.9rem;
+    margin-left: .5rem;
 }
 .post .wrapper .postTopLeft .userName,
 .post .wrapper .postTopLeft .profile_picture,
@@ -34,8 +35,9 @@
     cursor: pointer;
 }
 .post .wrapper .postTopLeft .postDate {
-    margin-left: -5.6rem;
+    margin-left: 3.6rem;
     margin-top: 2rem;
+    position: absolute;
 }
 .post .wrapper .postTopRight {
     margin-top: .3rem;
