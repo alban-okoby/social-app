@@ -48,12 +48,3 @@
     display: flex;
     align-items: center;
 }
-.friend_picture {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    overflow: hidden;
-    aspect-ratio: 1/1 ;
-    margin-right: .3rem;
-    margin-bottom: .3rem;
-}
