@@ -1,14 +1,24 @@
-import React from 'react';
+import { useState } from 'react';
 // Material Icons
 import { MoreVert, EmojiEmotions} from '@mui/icons-material';
 // Font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faComment, faThumbsUp, faShare } from '@fortawesome/free-solid-svg-icons';
-// Components 
-import './Post.css';
+// Data test and components 
 import { Users } from '../../data/data';
+// Customises components styles
+import './Post.css';
+
 
 const Post = ({post}) => { 
+
+    const [like, setLike] = useState(post.like);
+    const [isLiked, setIsLiked] = useState(false);
+
+    const likeHandler = () => {
+        setLike(isLiked ? like-1 : like+1);
+        setIsLiked(!isLiked);
+    }
   return (
     <div className='post'>
         <div className='wrapper'>
@@ -37,28 +47,29 @@ const Post = ({post}) => {
             <div className='postBottom'>
                 <div className='postBottomLeft'>
                     <li className="icon">
-                        <FontAwesomeIcon icon={faThumbsUp} className='heart' 
-                        />
+                        <FontAwesomeIcon icon={faThumbsUp}      className='heart' 
+                        onClick={likeHandler}/>
                    </li>
                     <li className="icon">
-                        <FontAwesomeIcon icon={faHeart} className='heart' 
+                        <FontAwesomeIcon icon={faHeart} className='heart'
+                        onClick={likeHandler} 
                         />
                    </li>
                    <li className="icon">
-                        <EmojiEmotions 
+                        <EmojiEmotions onClick={likeHandler}
                         />
                    </li>
-                    <span className='postCount'>17 </span>
+                    <span className='postCount'>{like} </span>
                 </div>
                 <div className='postBottomCenter'>
                     <FontAwesomeIcon icon={faComment} className='icon'
                     />
-                    <span className='postCommentCount'> 22 </span>
+                    <span className='postCommentCount'> {post.comment} </span>
                 </div>
                 <div className='postBottomRight'>
                     <FontAwesomeIcon icon={faShare} className='icon' 
                    />
-                    <span className='postCommentText'> 9 </span>
+                    <span className='postComment'>{post.share} </span>
                     <li></li>
                 </div>
             </div>

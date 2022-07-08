@@ -66,6 +66,7 @@ export const Users = [
       userId: 1,
       like: 32,
       comment: 9,
+      share : 11,
     },
     {
       id: 2,
@@ -74,6 +75,8 @@ export const Users = [
       userId: 2,
       like: 2,
       comment: 1,
+      share : 1,
+
     },
     {
       id: 3,
@@ -81,8 +84,10 @@ export const Users = [
       image: "http://via.placeholder.com/500x499",
       date: "1 hour ago",
       userId: 3,
-      like: 61,
-      comment: 2,
+      like: 161,
+      comment: 42,
+      share : 91,
+
     },
     {
       id: 4,
@@ -90,17 +95,20 @@ export const Users = [
       image: "https://dummyimage.com/1640x360/fBf/222",
       date: "4 hours ago",
       userId: 4,
-      like: 7,
+      like: 17,
       comment: 3,
+      share : 1,
+
     },
     {
       id: 5,
+      description : "L'argent n'a pas de parfum, mais une valeur !",
       image: "http://via.placeholder.com/900x800",
       date: "5 hours ago",
       userId: 5,
       like: 23,
       comment: 5,
-      description : "L'argent n'a pas de parfum, mais une valeur !",
+      share : 5,
 
     },
     {
@@ -109,8 +117,10 @@ export const Users = [
       image: "https://dummyimage.com/910x660/fab/000",
       date: "1 day ago",
       userId: 6,
-      like: 44,
-      comment: 6,
+      like: 144,
+      comment: 26,
+      share : 51,
+
     },
     {
       id: 7,
@@ -120,6 +130,8 @@ export const Users = [
       userId: 7,
       like: 52,
       comment: 3,
+      share : 11,
+
     },
     {
       id: 8,
@@ -129,6 +141,7 @@ export const Users = [
       userId: 8,
       like: 15,
       comment: 1,
+      share : 0,
     },
     {
       id: 9,
@@ -138,6 +151,7 @@ export const Users = [
       userId: 9,
       like: 11,
       comment: 2,
+      share : 1,
     },
     {
       id: 10,
@@ -147,5 +161,6 @@ export const Users = [
       userId: 10,
       like: 104,
       comment: 12,
+      share : 3,
     },
   ];
