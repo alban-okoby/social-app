@@ -1,4 +1,7 @@
 import { Person, Chat, Notifications, Search } from '@mui/icons-material';
+import { Icon } from '@mui/material';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart, faComment, faThumbsUp, faShare, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 import logo from '../../logo-40.jpg';
 import profileImg from '../../assets/image/profile.png';
@@ -21,6 +24,11 @@ const Topbar = () => {
 		</div>
 		<div className="topbarRight">
 			<div className="topbarLinks">
+				<div className="topbarLink themeIcon">
+					<span className=""></span>
+					<FontAwesomeIcon icon={faMoon} />
+					<span className='theme'>theme</span>
+				</div>
 				<div className="topbarLink">Accueil</div>
 				<div className="topbarLink">Autre</div>
 			</div>

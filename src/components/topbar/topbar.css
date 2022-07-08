@@ -44,7 +44,7 @@
 .searchBar input[type="search"] {
     background: transparent;
     color: var(--dark);
-    width: 30vw;
+    width: 19vw;
     padding: .6rem 1rem;
     margin-left: 1rem;
     font-size: .9rem;
@@ -79,8 +79,17 @@
 }
 .topbarLinks {
     display: flex;
+    font-size: 1.3rem;
+    margin-right: 1rem;
 }
-.topbarLink {
+.topbarLinks .themeIcon {
+    display: flex;
+    align-items: center;
+}
+.topbarLinks .themeText {
+    margin-right: .9rem;
+}
+.topbarLinks .topbarLink {
     margin-left: .6rem;
 }
 .topbarIcons {
@@ -91,6 +100,7 @@
     position: relative;
     cursor: pointer;
     top: .4rem;
+    font-size: 1rem;
 }
 .topbarIconBadge {
     background: var(--danger);
@@ -124,7 +134,7 @@
         height: 1.2rem;
     }
     .searchBar input{
-        visibility: hidden;
+        display: none;
     }
     .searchBar .searchIcon{
         visibility: visible;
