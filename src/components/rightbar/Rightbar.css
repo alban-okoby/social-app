@@ -29,3 +29,12 @@
     padding: .7rem;
     text-align: left;
 }
+
+.rightbar .username {
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.rightbar .username:hover {
+    text-decoration: underline;
+}

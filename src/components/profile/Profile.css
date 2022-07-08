@@ -1,0 +1,37 @@
+.profile {
+    display: flex;
+    background-color: white;
+}
+
+.profileRight {
+    flex: 9;
+}
+.profile .profileRightTop {
+    margin-bottom: 7rem;
+}
+.profileCover {
+    /* height: max(15.625rem); */
+    position: relative;
+}
+
+.profleCoverImg {
+    width: 100%;
+    height: 12.5rem;
+    object-fit: fill;
+}
+
+.profileUserImg {
+    position: absolute;
+    width: 9.5rem;
+    height: 9.375rem;
+    left: 0; right: 0;
+    object-fit: cover;
+    margin: auto;
+    margin-top: -4.3rem;
+    border-radius: 50%;
+    border: .2rem solid var(--preference);
+}
+
+.profileRightBottom {
+    display: flex;
+}
