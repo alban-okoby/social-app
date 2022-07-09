@@ -15,7 +15,7 @@
     --info: hsl(280, 49%, 42%);
     --secondary: hsl(252, 60%, 65%);
     --danger: hsl(352, 81%, 50%);
-    --success: hsl(120, 95%, 65%);
+    --success: hsl(120, 95%, 40%);
     --gray: hsl(252, 15%, 65%);
     --dark: hsl(252, 30%, 17%);
     --black: hsl(252, 30%, 10%);
@@ -107,36 +107,46 @@ img {
 }
 .btn-preference {
     background: var(--preference);
+    color: white;
 }
 .btn-preference-50 {
     background: var(--preference-50);
+    color: white;
 }
 .btn-primary {
     background: var(--primary);
+    color: white;
 }
 .btn-secondary {
     background: var(--secondary);
+    color: var(--white);
 }
 .btn-danger {
     background: var(--danger);
+    color: var(--white);
 }
 .btn-info {
     background: var(--info);
+    color: var(--white);
 }
 .btn-success {
     background: var(--success);
+    color: var(--white);
 }
 .btn-dark{
     background: var(--dark);
+    color: var(--white);
 }
 .btn-light {
     background: var(--light);
 }
 .btn-gray {
     background: var(--gray);
+    color: var(--white);
 }
 .btn-black {
     background: var(--black);
+    color: var(--white);
 }
 .btn-default {
     color: var(--black);
