@@ -1,0 +1,60 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #F0F2F5;
+    border: 1px solid red;
+}
+
+.login .wrapper {
+    width: 70%;
+    height: 70%;
+    /* background: white; */
+    display: flex;
+    padding: 0 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.login .loginLeft,
+.login .loginRight {
+    flex: 1;
+}
+
+.login .loginLeft,
+.login .loginRight,
+.login .loginBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login .loginLogo {
+    font-size: 3.125rem;
+    font-weight: 800;
+    color: var(--preference);
+}
+
+.login .loginDescription {
+    font-size: 1.5rem;
+}
+
+.login .loginBox {
+    height: 18.75rem;
+    padding: 1.25rem;
+    background: var(--white);
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login .loginInput {
+    height: 3.125rem;
+    border: solid .1rem var(--gray);
+    font-size: 1rem;
+    border-radius: .625rem;
+    padding-left: 1.325rem;
+}
