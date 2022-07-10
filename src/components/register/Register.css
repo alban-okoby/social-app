@@ -1,0 +1,124 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    /* background: #F0F2F5; */
+}
+
+.register .wrapper {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    border-radius: var(--border-radius);
+}
+
+.register .registerLeft,
+.register .registerRight {
+    flex: 1;
+}
+
+.register .registerLeft,
+.register .registerRight,
+.register .registerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register .registerLogo {
+    font-size: 3.125rem;
+    font-weight: 800;
+    color: var(--preference);
+}
+
+.register .registerDescription {
+    font-size: 1.5rem;
+}
+.register .registerRight {
+    margin-top: .9rem;
+    padding-top: 3.125rem;
+    background: white;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+}
+.register .registerRight img {
+    position: absolute;
+   width: 5rem; height: 5rem;
+   margin-left: 35%;
+   margin-top: -6rem;
+   z-index: 999;
+}
+.register .registerBox {
+    position: relative;
+    height: 35.75rem;
+    min-width: 17rem;
+    padding: 2rem 1.25rem;
+    padding-top: 3rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: var(--card-border-radius);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.58);
+
+}
+
+.register .registerInput {
+    height: 3.125rem;
+    border: solid .1rem var(--gray);
+    font-size: 1rem;
+    border-radius: .625rem;
+    padding-left: 1.325rem;
+}
+
+.register .registerInput:focus {
+    outline: none;
+}
+.register .registerButton {
+    height: 3.125rem;
+    background-color: var(--preference);
+    border-radius: .3rem;
+    color: var(--white);
+    cursor: pointer;
+}
+.register .registerAlready {
+    color: var(--preference);
+    text-align: center;
+}
+
+.register .registerRegisterButton {
+    min-height: 3.125rem;
+    max-height: 4.5rem;
+    width: 50%;
+    max-width: 15rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+@media screen and (max-width:640px) {
+    .register {
+        text-align: center;
+        background: none;
+    }
+    .register .registerLogo {
+        font-size: 2.5rem;
+    }
+    .register .registerDescription {
+        font-size: 1.5rem;
+    }
+    .register .registerRight {
+        border-top-left-radius: 13rem;
+        border-top-right-radius: 13rem;    
+    }
+    .register .registerBox {
+        margin-left: 0px;
+        margin-top: 1rem;
+        background: var(--white);
+
+    }
+}
