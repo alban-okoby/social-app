@@ -15,15 +15,13 @@ const Register = () => {
             <div className="registerRight">
                 <div className="registerBox">
                     <img src={logo} className='profile_picture'/>
-                    <input type="text" placeholder="First name" className="registerInput"/>
-                    <input type="text" placeholder="Last name" className="registerInput"/>
-                    <input type="text" placeholder="Pseudo" className="registerInput"/>
+                    <input type="text" placeholder="Username" className="registerInput"/>
                     <input type="email" placeholder="Email" className="registerInput"/>
-                    <input type="text" placeholder="Password" className="registerInput"/>
-                    <input type="text" placeholder="Confirm password" className="registerInput"/>
-                    <button className="registerButton">Inscription</button>
+                    <input type="password" placeholder="Password" className="registerInput"/>
+                    <input type="password" placeholder="Repeat password" className="registerInput"/>
+                    <button className="registerButton btn ">Inscription</button>
                     <span className="registerAlready">Déjà un compte ?</span>
-                    <button className="registerRegisterButton btn-success"> Se connecter</button>
+                    <button className="registerRegisterButton btn btn-success"> Se connecter</button>
 
                 </div>
             </div>
