@@ -30,10 +30,31 @@
     text-align: left;
 }
 
+.rightbar .rightbarFriends {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
+    grid-gap: 1rem;
+    box-shadow: var(--box-shadow);
+    padding: .1rem;
+}
+.rightbar .rightbarFriend {
+    /* width: 100px; */
+    /* border-radius: var(--card-border-radius); */
+    border-radius: .2rem;
+}
+.rightbar .rightbarFriend img {
+    border-radius: var(--card-border-radius);
+    object-fit: cover;
+}
+.rightbar .rightbarFriend .username {
+    text-align: right;
+    margin-left: .7rem;
+}
 .rightbar .username {
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
+    text-align: center;
 }
 .rightbar .username:hover {
     text-decoration: underline;

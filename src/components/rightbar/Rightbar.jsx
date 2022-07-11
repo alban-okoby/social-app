@@ -50,22 +50,32 @@ const Rightbar = (profile) => {
 					</div>
 				</section>
 				<h4 className='rightbarTitle'> Amis </h4>
-				<div className='rightbarFollowing'>
-					<img src="https://dummyimage.com/1640x460/222/fff" />
-					<span className='username'> Jean Kouakou</span>
-				</div>
-				<div className='rightbarFollowing'>
-					<img src="https://dummyimage.com/1640x460/222/fff" />
-					<span className='username'> Nicola Garba</span>
-				</div>
-				<div className='rightbarFollowing'>
-					<img src="https://dummyimage.com/1640x460/bec/aaa" />
-					<span className='username'> Madou becet</span>
-				</div>
-				<div className='rightbarFollowing'>
-					<img src="https://dummyimage.com/1640x460/222/fff" />
-					<span className='username'> Daouda Digbeu</span>
-				</div>
+				<section className="rightbarFriends">
+					<div className='rightbarFriend'>
+						<img src="https://mdbootstrap.com/img/new/avatars/1.jpg" />
+						<span className='username'> Jean Kouakou</span>
+					</div>
+					<div className='rightbarFriend'>
+						<img src="https://mdbootstrap.com/img/new/avatars/11.jpg" />
+						<span className='username'> Nicola Garba</span>
+					</div>
+					<div className='rightbarFriend'>
+						<img src="https://mdbootstrap.com/img/new/avatars/12.jpg" />
+						<span className='username'> Madou becet</span>
+					</div>
+					<div className='rightbarFriend'>
+						<img src="https://mdbootstrap.com/img/new/avatars/13.jpg" />
+						<span className='username'> Daouda Digbeu</span>
+					</div>
+					<div className='rightbarFriend'>
+						<img src="https://mdbootstrap.com/img/new/avatars/14.jpg" />
+						<span className='username'> Rebecca Fernandez</span>
+					</div>
+					<div className='rightbarFriend'>
+						<img src="https://mdbootstrap.com/img/new/avatars/15.jpg" />
+						<span className='username'> Alban Lamine</span>
+					</div>
+				</section>
 				
 			</>
 		)

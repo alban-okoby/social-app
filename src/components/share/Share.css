@@ -8,7 +8,7 @@
     -moz-box-shadow: var(--box-shadow);
     -o-box-shadow: var(--box-shadow);
     padding: .3rem .2rem;
-    border: 1px solid var(--preference);
+    /* border: 1px solid var(--preference); */
 
 }
 .share .wrapper {

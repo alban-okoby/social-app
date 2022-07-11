@@ -13,8 +13,8 @@ const Profile = () => {
   return (
     <>
       <Topbar/>
-      <div className="profile">
-        <Sidebar />
+      <div className="profile container">
+        {/* <Sidebar /> */}
         <div className='profileRight'>
             <div className='profileRightTop'>
                 <div className='profileCover'>

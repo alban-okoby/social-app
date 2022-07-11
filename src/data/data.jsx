@@ -60,7 +60,7 @@ export const Users = [
   export const Posts = [
     {
       id: 1,
-      description: "Chaque jour à son jeu de jambes, c'est n'est plus une question de  vitesse, mais de précision de d'objectif.                            #ForTomorowSuccess #DoItNow.",
+      description: "Chaque jour à son jeu de jambes, ce n'est plus une question de  vitesse, mais de précision de d'objectif.                            #ForTomorowSuccess #DoItNow.",
       image: "https://dummyimage.com/1640x360/aaf/111",
       date: "5 mins",
       userId: 1,
